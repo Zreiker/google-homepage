@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #555555;
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 16fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+                      "header header header"
+                      ". main ."
+                      "footer footer footer";
+}
+
+button {
+  background: #F3F3F3;
+  font-size: 12pt;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 15px 0 15px;
+  margin: 20px 10px 0 10px;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#about, #store, #gmail, #images, #apps, #profile {
+  padding: 0 5px 0 5px;
+}
+
+#advertising, #business, #search-info, #privacy, #terms, #settings {
+  padding: 0 5px 0 5px;
+}
+
+#logo > img{
+  width: 20vw;
+}
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+}
+
+#main {
+  display: flex;
+  padding-top: 20%;
+  flex-direction: column;
+  align-items: center;
+  grid-area: main;
+}
+
+#search-bar {
+  width: 100%;
+  height: 7%;
+  -webkit-appearance: none;
+  border-radius: 25px;
+  border: 0;
+  box-shadow: 0px 0px 10px -5px;
+  background-image: url("img/search-icon.png");
+  background-size: 5px 5px;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+#footer {
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-area: footer;
+  background: #F3F3F3;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  border-color: #DDDDDD;
+}
+
+#menu-icon {
+  height: 24px;
+}
